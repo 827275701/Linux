@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include"DLinkList.h"
+
+#define FUNCTION printf("\n===================================%s======================================\n", __FUNCTION__)
+
+void DLinkListInit(DLinkNode** head){
+    if(head == NULL){
+        return;
+    }
+    *head = (DLinkNode*)malloc(sizeof(DLinkNode));
+    (*head)->data = 0;
+    (*head)->prev = *head;
+    (*head)->next = *head;
+}
+
+
+////////////////////////////////////////////////////
+//以下为测试代码
+////////////////////////////////////////////////////
+
+void TestInit()
+{
+    FUNCTION;
+    DLinNode* head;
+    DLinkListInit(&head);
+    printf("head->data expected 0, actrue is %d\n", head.data);
+    printf("head->prev expected %p, actrue is %p\n", head, head.prev);
+    printf("head->next expected %p, actrue is %p\n", head, head.next;
+}
+
+int main()
+{
+    TestInit();
+
+
+    return 0;
+}
