@@ -26,12 +26,6 @@ void process_creat(pid_t* pid, void* func(void *), void* arg) {
         }
 }
 
-
-
-
-
-
-
 int main()
 {
     pid_t pid = fork();
