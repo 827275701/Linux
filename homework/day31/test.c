@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<stdlib.h>
 #include"test.h"
 #define HEADNAME printf("\n=========================%s======================\n",__FUNCTION__)
 
